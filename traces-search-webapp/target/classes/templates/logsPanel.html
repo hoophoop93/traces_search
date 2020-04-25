@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/custom.css">
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.js'></script>
+    <script type='text/javascript' src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+    <title>Logs panel</title>
+    <style>
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
+    </style>
+    <script>
+	$(document).ready(function() {
+		setTimeout(function() {
+			$('#disapear').fadeOut('fast');
+		}, 6000); // <-- time in milliseconds
+
+		setTimeout(function() {
+			$('#disapearPhrase').fadeOut('fast');
+		}, 4000); // <-- time in milliseconds
+	});
+    </script>
+</head>
+<body>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <h2>
+                <p style="color: black; display: inline; font-weight: bold; margin-left: 20px;"
+                        class="navbar-brand">
+                    <a href="/" style="color: black;"><img src="logo2.png" alt="Logo" height="55" width="55">Logs Panel </a>
+                </p>
+                <p style="float: right; color: black; display: inline; font-weight: bold;" class="navbar-brand">
+                    <a href="/settings" style="color: black;"><img src="settings.png" alt="Logo" height="55" width="55">Settings</a>
+                </p>
+            </h2>
+            <br/>
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <br/> <br/> <br/> <br/>
+    <div class="alert success" id="disapear" th:each="i : ${infos}">
+        <span class="closebtn">&times;</span> <strong>Success!</strong>
+        <p th:text="${i}"></p>
+    </div>
+    <form action="#" th:action="@{/}" th:object="${model}" role="form"
+          method="post">
+        <div>
+            <h3 style="color: #CC6600;">Phrase</h3>
+            <input type="text" class="form-control" id="exampleInputName1"
+                   placeholder="Phrase" th:field="*{phrase}"/> <br/> <span id="disapearPhrase"
+                                                                           style="color: #990000; font-weight: 600;"
+                                                                           th:if="${#fields.hasErrors('phrase')}"
+                                                                           th:errors="*{phrase}"></span>
+        </div>
+        <input type="checkbox" th:field="*{splitFlag}"> Split Phrase on space<br> <br/>
+        <div id="datetimepicker" class="input-append date">
+            <h3 style="color: #CC6600;">Start Date</h3>
+            <input type="text" placeholder="dd-MM-yyyy hh:mm:ss"
+                   th:field="*{dateStart}"/> <span class="add-on"> <i
+                data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
+        </div>
+        <br/>
+        <div id="datetimepicker2" class="input-append date">
+            <h3 style="color: #CC6600;">End Date</h3>
+            <input type="text" placeholder="dd-MM-yyyy hh:mm:ss"
+                   th:field="*{dateEnd}"/> <span class="add-on"> <i
+                data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
+        </div>
+        <br/>
+        <button style="font-weight: bold; font-size: 17px; padding: 12px 28px;"
+                class="btn btn-dark">OK</button>
+    </form>
+    <form action="#" th:action="@{/}" th:object="${model}">
+        <button name="action" value="clear"
+                style="font-weight: bold; font-size: 17px; padding: 12px 28px;"
+                class="btn btn-dark">CLEAR
+        </button>
+    </form>
+</div>
+<script>
+		var close = document.getElementsByClassName("closebtn");
+		var i;
+
+		for (i = 0; i < close.length; i++) {
+			close[i].onclick = function() {
+				var div = this.parentElement;
+				div.style.opacity = "0";
+				setTimeout(function() {
+					div.style.display = "none";
+				}, 600);
+			}
+		}
+
+</script>
+<script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+<script type="text/javascript"
+        src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+</script>
+<script type="text/javascript"
+        src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+</script>
+<script type="text/javascript"
+        src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+</script>
+<script>
+		$(function() {
+			$('#datetimepicker').datetimepicker({
+				format : 'dd-MM-yyyy hh:mm:ss',
+				language : 'en-GB',
+			});
+		});
+
+</script>
+<script type="text/javascript">
+		$('#datetimepicker2').datetimepicker({
+			format : 'dd-MM-yyyy hh:mm:ss',
+			language : 'en-GB'
+		});
+
+</script>
+</body>
+</html>

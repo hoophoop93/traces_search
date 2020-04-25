@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+          crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Insert title here</title>
+
+    <script>
+	$(document).ready(function() {
+		$("#moreLines").click(function() {
+			$.ajax({
+				url : '/nextLines',
+				success : function(data) {
+					$("#display").append(data).trigger('change');
+					$("#mydiv").scrollTop($("#mydiv")[0].scrollHeight);
+				}
+			});
+		});
+	});
+
+	$(document).ready(function() {
+	if(sessionStorage.length === 0) {
+	var fontSize2 =1.0;
+	var temp2 = 1.0;
+	sessionStorage.setItem("fontSize",fontSize2);
+	sessionStorage.setItem("fontSizeFloat",temp2);
+	}
+	    var rowpos = $('#middle').position();
+	    var scrollableDivJ=$("#mydiv");
+	    scrollableDivJ.scrollTop("1000000");
+	    scrollableDivJ.scrollTop(rowpos.top-(450* 1/sessionStorage.getItem("fontSizeFloat")));
+	    document.body.style.fontSize = sessionStorage.getItem("fontSize");;
+	});
+
+function resizeText(multiplier) {
+  if (document.body.style.fontSize == "") {
+    document.body.style.fontSize = "1.0em";
+  }
+	var temp = parseFloat(document.body.style.fontSize) + (multiplier * 0.2);
+	if(temp >= 1.12)
+	{ temp = 1.12;
+	}
+	if(temp <=0.639)
+	{ temp = 0.639;
+	}
+  var fontSize = temp + "em";
+  document.body.style.fontSize = fontSize;
+  sessionStorage.setItem("fontSize",fontSize);
+  sessionStorage.setItem("fontSizeFloat",temp);
+
+}
+</script>
+</head>
+<body>
+
+<div style="margin-top:10px;" class="container-fluid">
+    <div class="col-lg-12" id="mydiv" style="overflow-y: scroll; height: 850px;">
+        <table>
+            <tr th:each="element,iterationStatus: ${logs}">
+                <td id="middle" th:if="${iterationStatus.count} == ${middle}" th:text="${element}"
+                    style="background-color: #3366FF; color: white;white-space: pre-wrap;"></td>
+                <td style="white-space: pre-wrap;" th:if="${iterationStatus.count} != ${middle}" th:text="${element}"></td>
+                <td th:if="${element == ''}">&nbsp</td>
+            </tr>
+        </table>
+        <p style="margin:0 0 0 4px; padding: 0;white-space: pre-wrap;" id="display"></p>
+        <div th:if="${#lists.isEmpty(logs)}">File is empty.</div>
+    </div>
+    <div>
+        <footer style="  background: #fff;
+            padding: 20px 50px;
+            overflow: hidden;
+            position: fixed;
+            z-index: 5;
+            left: 0;
+            bottom: 0;
+            width: 100%;">
+            <table>
+                <tr>
+                    <td>
+                        <form action="#" th:action="@{/show/}+ ${id} ">
+                            <button id="nextPhrase" class="btn btn-primary">Next Phrase</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="#" th:action="@{/show/}+ ${id}">
+                            <button class="btn btn-primary" name="action" value="next">One Next Line</button>
+                        </form>
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" id="moreLines">More lines</button>
+                    </td>
+                    <td>
+                        <form action="#" th:action="@{/show/}+ ${id}">
+                            <button class="btn btn-primary" name="action" value="reset">Reset to start</button>
+                        </form>
+                    </td>
+                    <td style="margin-left:30px;">
+                        <button class="btn btn-success" onclick="resizeText(0.3)">Font size +</button>
+                    </td>
+
+                    <td>
+                        <button class="btn btn-success" onclick="resizeText(-0.3)">Font size -</button>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+</div>
+<script>
+</script>
+</body>
+</html>

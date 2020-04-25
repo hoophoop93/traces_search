@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Logs panel</title>
+</head>
+<body>
+	<h2>Logs Panel</h2>
+
+	    <form action="#" th:action="@{/logsPanel}" th:object="${model}" role="form" method="post" >
+		  <div >
+                            <span class="text-warning"><h2><label for="exampleInputName1">Phrase</label></h2></span>
+                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Phrase" th:field="*{phrase}"/>
+                            <span class="text-danger" th:if="${#fields.hasErrors('phrase')}" th:errors="*{phrase}"></span>
+                        </div>
+
+		<div >
+                            <span class="text-warning"><h2><label for="exampleInputName1">Start Date</label></h2></span>
+                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Start Date" th:field="*{dateStart}"/>
+                            <span class="text-danger" th:if="${#fields.hasErrors('dateStart')}" th:errors="*{dateStart}"></span>
+                        </div>
+		
+		<div >
+                            <span class="text-warning"><h2><label for="exampleInputName1">End Date</label></h2></span>
+                            <input type="text" class="form-control" id="exampleInputName1" placeholder="End Date" th:field="*{dateEnd}"/>
+                            <span class="text-danger" th:if="${#fields.hasErrors('dateEnd')}" th:errors="*{dateEnd}"></span>
+                        </div>
+		<br />
+			<button >OK</button>
+	</form>
+
+</body>
+</html>

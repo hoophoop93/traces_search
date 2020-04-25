@@ -1,0 +1,1000 @@
+10-08-2018 16:55:07 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+10-08-2018 16:55:07 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+
+10-08-2018 16:56:02 ERROR [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logChangedFields(TechNonTechUpdateHelper.java:186)] - 
+Modified fields: CLINIC 
+10-08-2018 16:56:02 ERROR [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100030429) (95294985) (45223493) ([6046]) (false) (false) (false) (false) (false) 
+(100061577) (95329349) (45232372) ([84]) (false) (false) (false) (false) (false) 
+(100066245) (95335889) (45234156) ([84]) (false) (false) (false) (false) (false) 
+(100110546) (95383727) (45252583) ([84]) (false) (false) (false) (false) (false) 
+(100163500) (95440757) (45274363) ([84]) (false) (false) (false) (false) (false) 
+(100209919) (95490700) (45293830) ([84]) (false) (false) (false) (false) (false) 
+(100290676) (95574981) (45326679) ([84]) (false) (false) (false) (false) (false) 
+(100295315) (95579406) (45328889) ([84]) (false) (false) (false) (false) (false) 
+(100324792) (95610033) (45340922) ([84]) (false) (false) (false) (false) (false) 
+(100370154) (95659094) (45359832) ([84]) (false) (false) (false) (false) (false) 
+(100417988) (95706702) (45379619) ([84]) (false) (false) (false) (false) (false) 
+(100468863) (95763202) (45400695) ([84]) (false) (false) (false) (false) (false) 
+(100509267) (95805069) (45417486) ([6046]) (false) (false) (false) (false) (false) 
+
+10-08-2018 16:56:02 ERROR [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100030429) (95294985) (45223493) ([6046]) (false) (false) (false) (false) (false) 
+(100061577) (95329349) (45232372) ([84]) (false) (false) (false) (false) (false) 
+(100066245) (95335889) (45234156) ([84]) (false) (false) (false) (false) (false) 
+(100110546) (95383727) (45252583) ([84]) (false) (false) (false) (false) (false) 
+(100163500) (95440757) (45274363) ([84]) (false) (false) (false) (false) (false) 
+(100209919) (95490700) (45293830) ([84]) (false) (false) (false) (false) (false) 
+(100290676) (95574981) (45326679) ([84]) (false) (false) (false) (false) (false) 
+(100295315) (95579406) (45328889) ([84]) (false) (false) (false) (false) (false) 
+(100324792) (95610033) (45340922) ([84]) (false) (false) (false) (false) (false) 
+(100370154) (95659094) (45359832) ([84]) (false) (false) (false) (false) (false) 
+(100417988) (95706702) (45379619) ([84]) (false) (false) (false) (false) (false) 
+(100468863) (95763202) (45400695) ([84]) (false) (false) (false) (false) (false) 
+(100509267) (95805069) (45417486) ([6046]) (false) (false) (false) (false) (false
+) 
+
+10-08-2018 16:56:25 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmrbs.Action.init
+(Action.java:52)] - ERROR Init Action:  Id: 5871, Code:  - There is no action: AutoSelectValidToRelease
+10-08-2018 16:56:25 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmrbs.GcmRbsMgr.readRulesInfo(GcmRbsMgr.java:563)] - ERROR Init Rule: ruleRecid [2942] ruleEntry [DMIUPDATE] ruleEvent [DMITESTUPDATE] ruleName [Autorelease NOLY valid tests] [There is no action: AutoSelectValidToRelease]
+java.lang.NullPointerException: There is no action: AutoSelectValidToRelease
+        at com.scc.gcmrbs.RegisterRbsActions.getIAction(RegisterRbsActions.java:399)
+        at com.scc.gcmrbs.Action.init(Action.java:41)
+        at com.scc.gcmrbs.Rule.initRule(Rule.java:82)
+        at com.scc.gcmrbs.GcmRbsMgr.readRulesInfo(GcmRbsMgr.java:540)
+        at com.scc.gcmrbs.GcmRbsMgr.getRbsSystemInfo(GcmRbsMgr.java:190)
+        at com.scc.gcmrbs.GcmRbsMgr$2GetRbsSystemInfoWorker.execute(GcmRbsMgr.java:234)
+        at com.scc.gcmutil.HibernateUtil.runSessionWork(HibernateUtil.java:189)
+        at com.scc.gcmrbs.GcmRbsMgr.getRbsSystemInfo(GcmRbsMgr.java:243)
+        at com.scc.gcmrbs.GcmRbsMgr.selectRules(GcmRbsMgr.java:1073)
+        at com.scc.gcmrbs.GcmRbsMgr.performRules(GcmRbsMgr.java:1379)
+        at com.scc.gcmrbs.GcmRbsMgr.performRules(GcmRbsMgr.java:1265)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.performRequisitionSavedRBSRules(RequisitionSubmitter.java:519)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.trySubmitUpdateRequisition(RequisitionSubmitter.java:488)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.submitUpdateOrder(RequisitionSubmitter.java:2626)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.submitUpdateOrder(RequisitionSubmitter.java:2548)
+        at com.scc.gcmintegration.inbound.services.RequisitionOrderingServiceSoap_BindingImpl.submitUpdateOrderAndAttachments(RequisitionOrderingServiceSoap_BindingImpl.java:158)
+        at sun.reflect.GeneratedMethodAccessor24658.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at com.scc.gcmutil.intercepting.InvocationContext.proceed(InvocationContext.java:46)
+        at com.scc.gcmutil.spring.axis.SpringProvider.invokeMethod(SpringProvider.java:78)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.d
+oFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.j
+ava:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 16:56:25 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmrbs.Action.init(Action.java:52)] - ERROR Init Action:  Id: 31822, Code:  - There is no action: AutoSelectValidToRelease
+10-08-2018 16:56:25 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmrbs.GcmRbsMgr.readRulesInfo(GcmRbsMgr.java:563)] - ERROR Init Rule: ruleRecid [17171] ruleEntry [DMIUPDATE] ruleEvent [DMITESTUPDATE] ruleName [Copy of Auto Release Olympus OLYM tests (DRUG)] [There is no action: AutoSelectValidToRelease]
+java.lang.NullPointerException: There is no action: AutoSelectValidToRelease
+        at com.scc.gcmrbs.RegisterRbsActions.getIAction(RegisterRbsActions.java:399)
+        at com.scc.gcmrbs.Action.init(Action.java:41)
+        at com.scc.gcmrbs.Rule.initRule(Rule.java:82)
+        at com.scc.gcmrbs.GcmRbsMgr.readRulesInfo(GcmRbsMgr.java:540)
+        at com.scc.gcmrbs.GcmRbsMgr.getRbsSystemInfo(GcmRbsMgr.java:190)
+        at com.scc.gcmrbs.GcmRbsMgr$2GetRbsSystemInfoWorker.execute(GcmRbsMgr.java:234)
+        at com.scc.gcmutil.HibernateUtil.runSessionWork(HibernateUtil.java:189)
+        at com.scc.gcmrbs.GcmRbsMgr.getRbsSystemInfo(GcmRbsMgr.java:243)
+        at com.scc.gcmrbs.GcmRbsMgr.selectRules(GcmRbsMgr.java:1073)
+        at com.scc.gcmrbs.GcmRbsMgr.performRules(GcmRbsMgr.java:1379)
+        at com.scc.gcmrbs.GcmRbsMgr.performRules(GcmRbsMgr.java:1265)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.performRequisitionSavedRBSRules(RequisitionSubmitter.java:519)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.trySubmitUpdateRequisition(RequisitionSubmitter.java:488)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.submitUpdateOrder(RequisitionSubmitter.java:2626)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.submitUpdateOrder(RequisitionSubmitter.java:2548)
+        at com.scc.gcmintegration.inbound.services.RequisitionOrderingServiceSoap_BindingImpl.submitUpdateOrderAndAttachments(RequisitionOrderingServiceSoap_BindingImpl.java:158)
+        at sun.reflect.GeneratedMethodAccessor24658.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at com.scc.gcmutil.intercepting.InvocationContext.proceed(InvocationContext.java:46)
+        at com.scc.gcmutil.spring.axis.SpringProvider.invokeMethod(SpringProvider.java:78)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServlet
+Base.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.in
+ternal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 16:57:10 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100512363) (-1) (45418693) ([6065]) (false) (false) (false) (false) (false) 
+
+10-08-2018 16:57:10 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100512363) (-1) (45418693) ([6065]) (false) (false) (false) (false) (false) 
+
+10-08-2018 16:57:32 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.services.ChangePatient.ChangePatientHandler.onChangePatient(ChangePatientHandler.java:285)] - 
+--------------------------------------------------
+Exception Info:
+        No info
+Exception Stack:
+java.lang.Exception: Unable to lock orders with numbers: 1800QDPK9, 1800QDPK9
+        at com.scc.gcmintegration.inbound.services.ChangePatient.ChangePatientHandler.onChangePatient(ChangePatientHandler.java:282)
+        at com.scc.gcmintegration.inbound.services.ChangePatient.ChangePatientHandler.onChangePatient(ChangePatientHandler.java:398)
+        at com.scc.gcmintegration.inbound.services.ChangePatientServiceSoap_BindingImpl.onChangePatient(ChangePatientServiceSoap_BindingImpl.java:15)
+        at sun.reflect.GeneratedMethodAccessor19352.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.
+invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 16:57:37 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logChangedFields(TechNonTechUpdateHelper.java:186)] - 
+Modified fields: ATTDOC 
+10-08-2018 16:57:37 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100469968) (95764259) (45401330) ([88]) (false) (false) (false) (false) (false) 
+(100469969) (95764260) (45401330) ([88]) (false) (false) (false) (false) (false) 
+
+10-08-2018 16:57:37 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100469968) (95764259) (45401330) ([88]) (false) (false) (false) (false) (false) 
+(100469969) (95764260) (45401330) ([88]) (false) (false) (false) (false) (false) 
+
+10-08-2018 16:57:46 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logChangedFields(TechNonTechUpdateHelper.java:186)] - 
+Modified fields: CLINIC 
+10-08-2018 16:57:46 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+
+(100507040) (95802381) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507041) (95802382) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507042) (9580238
+3) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507043) (95802384) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100506647) (95802268) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507033) (95802376) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507034) (95802375) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507036) (95802377) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507037) (95802378) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507038) (95802379) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507039) (95802380) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+
+10-08-2018 16:57:46 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100507040) (95802381) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507041) (95802382) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507042) (95802383) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507043) (95802384) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100506647) (95802268) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507033) (95802376) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507034) (95802375) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507036) (95802377) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507037) (95802378) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507038) (95802379) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+(100507039) (95802380) (45416332) ([4956]) (false) (false) (false) (false) (false) 
+
+10-08-2018 16:58:07 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmrbs.Action.init(Action.java:52)] - ERROR Init Action:  Id: 5871, Code:  - There is no action: AutoSelectValidToRelease
+10-08-2018 16:58:07 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmrbs.GcmRbsMgr.readRulesInfo(GcmRbsMgr.java:563)] - ERROR Init Rule: ruleRecid [2942] ruleEntry [DMIUPDATE] ruleEvent [DMITESTUPDATE] ruleName [Autorelease NOLY valid tests] [There is no action: AutoSelectValidToRelease]
+java.lang.NullPointerException: There is no action: AutoSelectValidToRelease
+        at com.scc.gcmrbs.RegisterRbsActions.getIAction(RegisterRbsActions.java:399)
+        at com.scc.gcmrbs.Action.init(Action.java:41)
+        at com.scc.gcmrbs.Rule.initRule(Rule.java:82)
+        at com.scc.gcmrbs.GcmRbsMgr.readRulesInfo(GcmRbsMgr.java:540)
+        at com.scc.gcmrbs.GcmRbsMgr.getRbsSystemInfo(GcmRbsMgr.java:190)
+        at com.scc.gcmrbs.GcmRbsMgr$2GetRbsSystemInfoWorker.execute(GcmRbsMgr.java:234)
+        at com.scc.gcmutil.HibernateUtil.runSessionWork(HibernateUtil.java:189)
+        at com.scc.gcmrbs.GcmRbsMgr.getRbsSystemInfo(GcmRbsMgr.java:243)
+        at com.scc.gcmrbs.GcmRbsMgr.selectRules(GcmRbsMgr.java:1073)
+        at com.scc.gcmrbs.GcmRbsMgr.performRules(GcmRbsMgr.java:1379)
+        at com.scc.gcmrbs.GcmRbsMgr.performRules(GcmRbsMgr.java:1265)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.performRequisitionSavedRBSRules(RequisitionSubmitter.java:519)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.trySubmitUpdateRequisition(RequisitionSubmitter.java:488)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.submitUpdateOrder(RequisitionSubmitter.java:2626)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.submitUpdateOrder(RequisitionSubmitter.java:
+2548)
+        at com.scc.gcmintegration.inbound.services.RequisitionOrderingServiceSoap_BindingImpl.submitUpdateOrderAndAttachments(RequisitionOrderingServiceSoap_BindingImpl.java:158)
+        at sun.reflect.GeneratedMethodAccessor24658.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at com.scc.gcmutil.intercepting.InvocationContext.proceed(InvocationContext.java:46)
+        at com.scc.gcmutil.spring.axis.SpringProvider.invokeMethod(SpringProvider.java:78)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaP
+rovider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 16:58:07 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmrbs.Action.init(Action.java:52)] - ERROR Init Action:  Id: 31822, Code:  - There is no action: AutoSelectValidToRelease
+10-08-2018 16:58:07 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmrbs.GcmRbsMgr.readRulesInfo(GcmRbsMgr.java:563)] - ERROR Init Rule: ruleRecid [17171] ruleEntry [DMIUPDATE] ruleEvent [DMITESTUPDATE] ruleName [Copy of Auto Release Olympus OLYM tests (DRUG)] [There is no action: AutoSelectValidToRelease]
+java.lang.NullPointerException: There is no action: AutoSelectValidToRelease
+        at com.scc.gcmrbs.RegisterRbsActions.getIAction(RegisterRbsActions.java:399)
+        at com.scc.gcmrbs.Action.init(Action.java:41)
+        at com.scc.gcmrbs.Rule.initRule(Rule.java:82)
+        at com.scc.gcmrbs.GcmRbsMgr.readRulesInfo(GcmRbsMgr.java:540)
+        at com.scc.gcmrbs.GcmRbsMgr.getRbsSystemInfo(GcmRbsMgr.java:190)
+        at com.scc.gcmrbs.GcmRbsMgr$2GetRbsSystemInfoWorker.execute(GcmRbsMgr.java:234)
+        at com.scc.gcmutil.HibernateUtil.runSessionWork(HibernateUtil.java:189)
+        at com.scc.gcmrbs.GcmRbsMgr.getRbsSystemInfo(GcmRbsMgr.java:243)
+        at com.scc.gcmrbs.GcmRbsMgr.selectRules(GcmRbsMgr.java:1073)
+        at com.scc.gcmrbs.GcmRbsMgr.performRules(GcmRbsMgr.java:1379)
+        at com.scc.gcmrbs.GcmRbsMgr.performRules(GcmRbsMgr.java:1265)
+        at com.scc.gcmintegration.in
+bound.services.RequisitionSubmitter.performRequisitionSavedRBSRules(RequisitionSubmitter.java:519)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.trySubmitUpdateRequisition(RequisitionSubmitter.java:488)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.submitUpdateOrder(RequisitionSubmitter.java:2626)
+        at com.scc.gcmintegration.inbound.services.RequisitionSubmitter.submitUpdateOrder(RequisitionSubmitter.java:2548)
+        at com.scc.gcmintegration.inbound.services.RequisitionOrderingServiceSoap_BindingImpl.submitUpdateOrderAndAttachments(RequisitionOrderingServiceSoap_BindingImpl.java:158)
+        at sun.reflect.GeneratedMethodAccessor24658.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at com.scc.gcmutil.intercepting.InvocationContext.proceed(InvocationContext.java:46)
+        at com.scc.gcmutil.spring.axis.SpringProvider.invokeMethod(SpringProvider.java:78)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 16:58:09 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet 
+saved in SoftMedia. Report info: [gp_reqi_recid]->[100479860], [gp_rep_recid]->[65984395], [gp_int_recid]->[84062030], [repStatus]->[S], [gp_reqi_testid]->[95774094], [IMG step status]->[N]
+10-08-2018 16:58:09 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800QBJC4,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 16:58:23 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100470270], [gp_rep_recid]->[65984433], [gp_int_recid]->[84062068], [repStatus]->[S], [gp_reqi_testid]->[95764919], [IMG step status]->[N]
+10-08-2018 16:58:23 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800QAPA2,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 16:58:23 ERROR [[ACTIVE] ExecuteThread: '15' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100479852], [gp_rep_recid]->[65984432], [gp_int_recid]->[84062067], [repStatus]->[S], [gp_reqi_testid]->[95774087], [IMG step status]->[N]
+10-08-2018 16:58:23 ERROR [[ACTIVE] ExecuteThread: '15' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800QBJB5,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 16:58:28 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100205809) (95484475) (45292211) ([]) (false) (true) (false) (true) (true) 
+
+10-08-2018 16:58:28 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100205809) (95484475) (45292211) ([]) (false) (true) (false) (true) (true) 
+
+10-08-2018 16:58:36 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmprocessing.ProcessingTasklistDataController.updateTasklistHeader(ProcessingTasklistDataController.java:4032)] - 
+--------------------------------------------------
+Exception Info:
+        No info
+Exception Stack:
+java.lang.Exception: no record updated in GP_TASKLIST table
+        at com.scc.gcmprocessing.ProcessingTasklistDataController.updateTasklistHeader(ProcessingTasklistDataController.java:4028)
+        at com.scc.flwprocessing.paneltrack.PanelTrackProvider.performTasklistHe
+ader(PanelTrackProvider.java:1938)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceDB.save(PanelTrackServiceDB.java:542)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceDB.save(PanelTrackServiceDB.java:131)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceSoap_BindingImpl.save(PanelTrackServiceSoap_BindingImpl.java:27)
+        at sun.reflect.GeneratedMethodAccessor26446.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.Sim
+pleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 16:58:36 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.flwprocessing.paneltrack.PanelTrackServiceDB.save(PanelTrackServiceDB.java:150)] - 
+--------------------------------------------------
+Exception Info:
+        No info
+Exception Stack:
+java.lang.Exception: no record updated in GP_TASKLIST table
+        at com.scc.gcmprocessing.ProcessingTasklistDataController.updateTasklistHeader(ProcessingTasklistDataController.java:4028)
+        at com.scc.flwprocessing.paneltrack.PanelTrackProvider.performTasklistHeader(PanelTrackProvider.java:1938)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceDB.save(PanelTrackServiceDB.java:542)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceDB.save(PanelTrackServiceDB.java:131)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceSoap_BindingImpl.save(PanelTrackServiceSoap_BindingImpl.java:27)
+        at sun.reflect.GeneratedMethodAccessor26446.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPSer
+vice.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 17:00:06 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100453828], [gp_rep_recid]->[65984515], [gp_int_recid]->[84062002], [repStatus]->[S], [gp_reqi_testid]->[95745315], [IMG step status]->[N]
+10-08-2018 17:00:06 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800PZBT3,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:00:06 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100468675], [gp_rep_recid]->[65984519], [gp_int_recid]->[84062132], [repStatus]->[S], [gp_reqi_testid]->[95762489], [IMG step status]->[N]
+10-08-2018 17:00:06 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800QAJG4,REPID: n
+ull,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:00:06 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.
+iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100473457], [gp_rep_recid]->[65984511], [gp_int_recid]->[84062128], [repStatus]->[S], [gp_reqi_testid]->[95767249], [IMG step status]->[N]
+10-08-2018 17:00:06 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800QAVR8,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:00:06 ERROR [[ACTIVE] ExecuteThread: '15' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100469487], [gp_rep_recid]->[65984510], [gp_int_recid]->[84062127], [repStatus]->[S], [gp_reqi_testid]->[95763422], [IMG step status]->[N]
+10-08-2018 17:00:06 ERROR [[ACTIVE] ExecuteThread: '15' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800QAKT1,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:00:07 ERROR [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmtools.AuditTrailReadingWrapper.saveAuditTable(AuditTrailReadingWrapper.java:706)] - Error while inserting table: GP_ORDER
+10-08-2018 17:00:09 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100446777], [gp_rep_recid]->[65984529], [gp_int_recid]->[84061994], [repStatus]->[S], [gp_reqi_testid]->[95738978], [IMG step status]->[N]
+10-08-2018 17:00:09 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800PYNB9,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:00:09 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100445149], [gp_rep_recid]->[65984538], [gp_int_recid]->[84062144], [repStatus]->[S], [gp_reqi_testid]->[95737482], [IMG step status]->[N]
+10-08-2018 17:00:09 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800PYKZ8,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:00:09 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationP
+rovider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100445148], [gp_rep_recid]->[65984536], [gp_int_recid]->[84062142], [repStatus]->[S], [gp_reqi_testid]->[95737481], [IMG step status]->[N]
+10-08-2018 17:00:09 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800PYKZ3,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:00:10 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100469014], [gp_rep_recid]->[65984540], [gp_int_recid]->[84062145], [repStatus]->[S], [gp_reqi_testid]->[95762628], [IMG step status]->[N]
+10-08-2018 17:00:10 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800QAKT6,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:00:10 ERROR [[ACTIVE] ExecuteThread: '19' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100445485], [gp_rep_recid]->[65984544], [gp_int_recid]->[84062147], [repStatus]->[S], [gp_reqi_testid]->[95737183], [IMG step status]->[N]
+10-08-2018 17:00:10 ERROR [[ACTIVE] ExecuteThread: '19' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800PYKZ9,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:00:16 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmprocessing.ProcessingTasklistDataController.updateTasklistHeader(ProcessingTasklistDataController.java:4032)] - 
+--------------------------------------------------
+Exception Info:
+        No info
+Exception Stack:
+java.lang.Exception: no record updated in GP_TASKLIST table
+        at com.scc.gcmprocessing.ProcessingTasklistDataController.updateTasklistHeader(ProcessingTasklistDataController.java:4028)
+        at com.scc.flwprocessing.paneltrack.PanelTrackProvider.performTasklistHeader(PanelTrackProvider.java:1938)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceDB.save(PanelTrackServiceDB.java:542)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceDB.save(PanelTrackServiceDB.java:131)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceSoap_BindingImpl.save(PanelTrackServiceSoap_BindingImpl.java:27)
+        at sun.reflect.GeneratedMethodAccessor26446.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider
+.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 17:00:16 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.flwprocessing.paneltrack.PanelTrackServiceDB.save(PanelTrackServiceDB.java:150)] - 
+--------------------------------------------------
+Exception Info:
+        No info
+Exception Stack:
+java.lang.Exception: no record updated in GP_TASKLIST table
+        at com.scc.gcmprocessing.ProcessingTasklistDataController.updateTasklistHeader(ProcessingTasklistDataController.java:4028)
+        at com.scc.flwprocessing.paneltrack.PanelTrackProvider.performTasklistHeader(PanelTrackProvider.java:1938)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceDB.save(PanelTrackServiceDB.java:542)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceDB.save(PanelTrackServiceDB.java:131)
+        at com.scc.flwprocessing.paneltrack.PanelTrackServiceSoap_BindingImpl.save(PanelTrackServiceSoap_BindingImpl.java:27)
+        at sun.reflect.GeneratedMethodAccessor26446.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.
+java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 17:00:21 ERROR [[ACTIVE] ExecuteThread: '19' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100512184) (-1) (45418700) ([6058]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:00:21 ERROR [[ACTIVE] ExecuteThread: '19' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100512184) (-1) (45418700) ([6058]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:00:21 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100384061], [gp_rep_recid]->[65984589], [gp_int_recid]->[84061953], [repStatus]->[S], [gp_reqi_testid]->[95673067], [IMG step status]->[N]
+10-08-2018 17:00:21 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readP
+atientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800PSFG3,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:00:23 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100453823], [gp_rep_recid]->[65984603], [gp_int_recid]->[84062001], [repStatus]->[S], [gp_reqi_testid]->[95745314], [IMG step status]->[N]
+10-08-2018 17:00:23 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800PZBT0,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:01:18 ERROR [[ACTIVE] ExecuteThread: '19' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmreport.label.AbstractLabel.logPrinting(AbstractLabel.java:431)] - Printing was not logged for label: 59597406|CG001|1-Slide Labels GK420t R5041667|O
+java.lang.NullPointerException
+        at com.scc.gcmreport.label.AbstractLabel.logPrinting(AbstractLabel.java:424)
+        at com.scc.gcmreport.LabelServiceDB.markPrintedLabels(LabelServiceDB.java:107)
+        at com.scc.gcmreport.LabelServiceSoap_BindingImpl.markPrintedLabels(LabelServiceSoap_BindingImpl.java:21)
+        at sun.reflect.GeneratedMethodAccessor12653.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wr
+apRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 17:01:38 ERROR [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmreport.NonTechnicalUpdateHelper.updateNoTechnicalReportData(NonTechnicalUpdateHelper.java:147)] - There isn't report data for interpretation request = 100502078
+10-08-2018 17:01:38 ERROR [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100502078) (-1) (45414309) ([6061]) (false) (true) (false) (true) (true) 
+
+10-08-2018 17:01:38 ERROR [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100502078) (-1) (45414309) ([6061]) (false) (true) (false) (true) (true) 
+
+10-08-2018 17:02:12 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 
+'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logSetupSettings(TechNonTechUpdateHelper.java:160)] - 
+Department specific settings
+DEP_ID - TP TPE TPQ - TM TME TMM - TN TNE TNM - NP NPE NPQ - NM NME NMM - NN NNE NNM
+74 - N null null - N null null - N null null - N null null - N null null - N null null
+10-08-2018 17:02:12 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logChangedFields(TechNonTechUpdateHelper.java:186)] - 
+Modified fields: ATTDOC 
+10-08-2018 17:02:12 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(99954477) (95218008) (45187997) ([74]) (false) (false) (false) (false) (false) 
+(100454265) (95746713) (45394816) ([74]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:02:12 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(99954477) (95218008) (45187997) ([74]) (false) (false) (false) (false) (false) 
+(100454265) (95746713) (45394816) ([74]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:02:45 ERROR [[ACTIVE] ExecuteThread: '19' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logChangedFields(TechNonTechUpdateHelper.java:186)] - 
+Modified fields: ATTDOC 
+10-08-2018 17:02:45 ERROR [[ACTIVE] ExecuteThread: '19' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(99446414) (94682090) (44977126) ([85]) (false) (false) (false) (false) (false) 
+(99446815) (94682044) (44977126) ([190]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:02:45 ERROR [[ACTIVE] ExecuteThread: '19' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(99446414) (94682090) (44977126) ([85]) (false) (false) (false) (false) (false) 
+(99446815) (94682044) (44977126) ([190]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:03:09 ERROR [[ACTIVE] ExecuteThread: '6' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmtools.GcmExceptionHandlerDB.saveException(GcmExceptionHandlerDB.java:74)] - Exception:1201293, START: Exception form CLIENT, Computer User Name:m078374, Computer Name:R5118964, Entry from secString:, Application user login:m078374, Application userID:JCA99, END: Exception form CLIENT
+10-08-2018 17:05:51 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logChangedFields(TechNonTechUpdateHelper.java:186)] - 
+Modified fields: CLINIC 
+10-08-2018 17:05:51 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100292896) (95577554) (45327645) ([5697]) (false) (fal
+se) (false) (false) (false) 
+
+10-08-2018 17:05:51 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tunin
+g)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100292896) (95577554) (45327645) ([5697]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:05:56 ERROR [[ACTIVE] ExecuteThread: '10' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.services.ChangePatient.ChangePatientHandler.onChangePatient(ChangePatientHandler.java:285)] - 
+--------------------------------------------------
+Exception Info:
+        No info
+Exception Stack:
+java.lang.Exception: Unable to lock orders with numbers: 1800QDPK9, 1800QDPK9
+        at com.scc.gcmintegration.inbound.services.ChangePatient.ChangePatientHandler.onChangePatient(ChangePatientHandler.java:282)
+        at com.scc.gcmintegration.inbound.services.ChangePatient.ChangePatientHandler.onChangePatient(ChangePatientHandler.java:398)
+        at com.scc.gcmintegration.inbound.services.ChangePatientServiceSoap_BindingImpl.onChangePatient(ChangePatientServiceSoap_BindingImpl.java:15)
+        at sun.reflect.GeneratedMethodAccessor19352.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.jav
+a:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 17:06:17 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmreport.NonTechnicalUpdateHelper.updateNoTechnicalReportData(NonTechnicalUpdateHelper.java:147)] - There isn't report data for interpretation request = 100512903
+10-08-2018 17:06:17 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmreport.NonTechnicalUpdateHelper.updateNoTechnicalReportData(NonTechnicalUpdateHelper.java:147)] - There isn't report data for interpretation request = 100512904
+10-08-2018 17:06:17 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmreport.NonTechnicalUpdateHelper.updateNoTechnicalReportData(NonTechnicalUpdateHelper.java:147)] - There isn't report data for interpretation request = 100512905
+10-08-2018 17:06:17 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logSetupSettings(TechNonTechUpdateHelper.java:160)] - 
+Department specific settings
+DEP_ID - TP TPE TPQ - TM TME TMM - TN TNE TNM - NP NPE NPQ - NM NME NMM - NN NNE NNM
+6036 - N null null - N null null - N null null - Y null TECHNICAL - Y ARPRS AUNTU - N null null
+10-08-2018 17:06:17 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100512903) (95810097) (45418710) ([6036]) (false) (true) (false) (true) (true) 
+(100512904) (-1) (45418710) ([6036]) (false) (true) (false) (true) (true) 
+(100512905) (95810099) (45418710) ([6036]) (false) (true) (false) (true) (true) 
+
+10-08-2018 17:06:17 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100512903) (95810097) (45418710) ([6036]) (false) (true) (false) (true) (true) 
+(100512904) (-1) (45418710) ([6036]) (false) (true) (false) (true) (true) 
+(100512905) (95810099) (45418710) ([6036]) (false) (true) (false) (true) (true) 
+
+10-08-2018 17:07:03 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmutil.perf.PerfDBWorker.saveBlobLogs(PerfDBWorker.java:316)] - PerfTabDB:saveBlobLogs
+AxisFault
+ faultCode: {http://schemas.xmlsoap.org/soap/envelope/}Server.generalException
+ faultSubcode: 
+ faultString: IOException in getAttachmentAsBytes; nested exception is: 
+        java.net.ProtocolException: EOF after reading only: '541092' of: '2413204' promised bytes, out of which at least: '3624' were already buffered
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+        {http://xml.apache.org/axis/}hostname:wlsp1ha1
+
+IOException in getAttachmentAsBytes; nested exception is: 
+        java.net.ProtocolException: EOF after reading only: '541092' of: '2413204' promised bytes, out of which at least: '3624' were already buffered
+        at com.scc.gcmutil.attachments.AttachmentManager.getAttachmentAsBytes(AttachmentManager.java:486)
+        at com.scc.gcmutil.attachments.AttachmentManager.getAttachmentAsBytes(AttachmentManager.java:458)
+        at com.scc.gcmutil.perf.PerfDBWorker.saveBlobLogs(PerfDBWorker.java:289)
+        at com.scc.gcmtools.PerfParamsServiceSoap_BindingImpl.writePerfLog(PerfParamsServiceSoap_BindingImpl.java:28)
+        at sun.reflect.GeneratedMethodAccessor12160.invoke(Unknown Source)
+        at sun.reflect.Delegatin
+gMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+Caused by: java.net.ProtocolException: EOF after reading only: '541092' of: '2413204' promised bytes, out of which at least: '3624' were already buffered
+        at org.apache.axis.AxisFault.makeFault(AxisFault.java:101)
+        at org.apache.axis.attachments.MultiPartDimeInputStream.readTillFound(MultiPartDimeInputStream.java:187)
+        at org.apache.axis.attachments.MultiPartDimeInputStream.readAll(MultiPartDimeInputStream.java:100)
+        at org.apache.axis.attachments.MultiPartDimeInputStream.getAttachments(MultiPartDimeInputStream.java:108)
+        at org.apache.axis.attachments.AttachmentsImpl.mergeinAttachments(AttachmentsImpl.java:171)
+        at org.apache.axis.attachments.AttachmentsImpl.getAttachments(AttachmentsImpl.java:390)
+        at com.scc.gcmutil.attachments.AttachmentManager.getAttachment(AttachmentManager.java:303)
+        at com.scc.gcmutil.attachments.AttachmentManager.getAttachmentAsBytes(AttachmentManager.java:478)
+        ... 37 more
+Caused by: java.net.ProtocolException: EOF after reading only: '541092' of: '2413204' promised bytes, out of which at least: '3624' were already buffe
+red
+        at weblogic.servlet.internal.PostInputStream.complain(PostInputStream.java:97)
+        at weblogic.servlet.internal.PostInputStream.read(PostInputStream.java:196)
+        at weblogic.servlet.internal.ServletInputStreamImpl.read(ServletInputStreamImpl.java:228)
+        at org.apache.axis.attachments.DimeDelimitedInputStream._read(DimeDelimitedInputStream.java:250)
+        at org.apache.axis.attachments.DimeDelimitedInputStream.read(DimeDelimitedInputStream.java:201)
+        at org.apache.axis.attachments.DimeDelimitedInputStream.read(DimeDelimitedInputStream.java:445)
+        at org.apache.axis.attachments.ManagedMemoryDataSource.<init>(ManagedMemoryDataSource.java:146)
+        at org.apache.axis.attachments.MultiPartDimeInputStream.readTillFound(MultiPartDimeInputStream.java:163)
+        ... 43 more
+10-08-2018 17:07:03 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:47)] - GZIPFilter.doFilter Exception
+java.net.SocketException: Broken pipe (Write failed)
+        at java.net.SocketOutputStream.socketWrite0(Native Method)
+        at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:104)
+        at java.net.SocketOutputStream.write(SocketOutputStream.java:148)
+        at weblogic.servlet.internal.ChunkOutput.writeChunkTransfer(ChunkOutput.java:568)
+        at weblogic.servlet.internal.ChunkOutput.writeChunks(ChunkOutput.java:539)
+        at weblogic.servlet.internal.ChunkOutput.flush(ChunkOutput.java:427)
+        at weblogic.servlet.internal.CharsetChunkOutput.flush(CharsetChunkOutput.java:298)
+        at weblogic.servlet.internal.ChunkOutputWrapper.flush(ChunkOutputWrapper.java:188)
+        at weblogic.servlet.internal.ServletOutputStreamImpl.flush(ServletOutputStreamImpl.java:121)
+        at weblogic.servlet.internal.ServletResponseImpl.flushBuffer(ServletResponseImpl.java:186)
+        at javax.servlet.ServletResponseWrapper.flushBuffer(ServletResponseWrapper.java:176)
+        at org.apache.axis.transport.http.AxisServlet.sendResponse(AxisServlet.java:909)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:777)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at w
+eblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 17:08:36 ERROR [[ACTIVE] ExecuteThread: '18' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmreport.label.AbstractLabel.logPrinting(AbstractLabel.java:431)] - Printing was not logged for label: 34728274|null|Client/R5054194#///roepdxprt002p/AZQN04619Citrix|O
+java.lang.NullPointerException
+        at com.scc.gcmreport.label.AbstractLabel.logPrinting(AbstractLabel.java:424)
+        at com.scc.gcmreport.LabelServiceDB.markPrintedLabels(LabelServiceDB.java:107)
+        at com.scc.gcmreport.LabelServiceSoap_BindingImpl.markPrintedLabels(LabelServiceSoap_BindingImpl.java:21)
+        at sun.reflect.GeneratedMethodAccessor12653.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37)
+        at java.lang.reflect.Method.invoke(Method.java:611)
+        at org.apache.axis.providers.java.RPCProvider.invokeMethod(RPCProvider.java:397)
+        at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+        at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+        at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+        at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+        at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+        at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+        at org.apache.axis.server.AxisServer.invoke(AxisServer.java:281)
+        at org.apache.axis.transport.http.AxisServlet.doPost(AxisServlet.java:699)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+        at org.apache.axis.transport.http.AxisServletBase.service(AxisServletBase.java:327)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+        at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+        at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:300)
+        at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at com.scc.gcmutil.filter.GZIPFilter.doLocalFilter(GZIPFilter.java:114)
+        at com.scc.gcmutil.filter.GZIPFilter.doFilter(GZIPFilter.java:42)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.RequestEventsFilter.doFilter(RequestEventsFilter.java:27)
+        at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3729)
+        at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3695)
+        at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+        at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+        at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2285)
+        at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2184)
+        at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1459)
+        at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+        at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+10-08-2018 17:09:21 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHe
+lper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100474779) (-1) (45403354) ([76]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:09:21 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100474779) (-1) (45403354) ([76]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:09:26 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100474779) (-1) (45403354) ([76]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:09:26 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100474779) (-1) (45403354) ([76]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:10:00 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logSetupSettings(TechNonTechUpdateHelper.java:160)] - 
+Department specific settings
+DEP_ID - TP TPE TPQ - TM TME TMM - TN TNE TNM - NP NPE NPQ - NM NME NMM - NN NNE NNM
+533 - Y null TECHNICAL - Y MCCLT MC755 - N null null - Y null TECHNICAL - Y MCCLT MC754 - N null null
+10-08-2018 17:10:00 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logChangedFields(TechNonTechUpdateHelper.java:186)] - 
+Modified fields: ATTDOC 
+10-08-2018 17:10:00 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100458960) (95750854) (45396690) ([533]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:10:00 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100458960) (95750854) (45396690) ([533]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:10:08 ERROR [[ACTIVE] ExecuteThread: '15' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logSetupSettings(TechNonTechUpdateHelper.java:160)] - 
+Department specific settings
+DEP_ID - TP TPE TPQ - TM TME TMM - TN TNE TNM - NP NPE NPQ - NM NME NMM - NN NNE NNM
+531 - N null null - N null null - N null null - Y MGTS2 NONTECH - N null null - N null null
+10-08-2018 17:10:08 ERROR [[ACTIVE] ExecuteThread: '15' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logChangedFields(TechNonTechUpdateHelper.java:186)] - 
+Modified fields: ATTDOC 
+10-08-2018 17:10:08 ERROR [[ACTIVE] ExecuteThread: '15' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log In
+formation - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100398558) (95687463) (45371617) ([531]) (false) (false) (false) (false) (false) 
+(100464255) (95758697) (45371617) ([531]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:10:08 ERROR [[ACTIVE] ExecuteThread: '15' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(100398558) (95687463) (45371617) ([531]) (false) (false) (false) (false) (false) 
+(100464255) (95758697) (45371617) ([531]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:12:18 ERROR [[ACTIVE] ExecuteThread: '15' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.providers.IwsInterpretationProvider.readInterpretation(IwsInterpretationProvider.java:534)] - Interpretation is signed but not yet saved in SoftMedia. Report info: [gp_reqi_recid]->[100479128], [gp_rep_recid]->[65984908], [gp_int_recid]->[84062390], [repStatus]->[S], [gp_reqi_testid]->[95773088], [IMG step status]->[N]
+10-08-2018 17:12:18 ERROR [[ACTIVE] ExecuteThread: '15' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.iws.SoftGeneResultProviderServiceDB.readPatientResults(SoftGeneResultProviderServiceDB.java:404)] - Above exception appeared for : SoftGeneOrderStatusProviderServiceDB.readPatientResults([SITE=null, SYSTEM=null, TOKEN=null, USER=null, TERMINAL=null],[ORDER: 1800QBHA5,REPID: null,InRTF: true,RTFEncoded: false,ALLREV: true])
+10-08-2018 17:12:36 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logSetupSettings(TechNonTechUpdateHelper.java:160)] - 
+Department specific settings
+DEP_ID - TP TPE TPQ - TM TME TMM - TN TNE TNM - NP NPE NPQ - NM NME NMM - NN NNE NNM
+74 - N null null - N null null - N null null - N null null - N null null - N null null
+531 - N null null - N null null - N null null - Y MGTS2 NONTECH - N null null - N null null
+534 - Y null TECHNICAL - Y CG053 CG010 - N null null - N null null - Y CG053 CG009 - N null null
+10-08-2018 17:12:36 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logChangedFields(TechNonTechUpdateHelper.java:186)] - 
+Modified fields: PHONE 
+10-08-2018 17:12:36 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> Before update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)
+(99950037) (95211373) (45186238) ([534]) (false) (false) (false) (false) (false) 
+(100187277) (95465354) (45186238) ([531]) (false) (false) (false) (false) (false) 
+(99954009) (95217775) (45187928) ([74]) (false) (false) (false) (false) (false) 
+(100114594) (95387817) (45254213) ([531]) (false) (false) (false) (false) (false) 
+
+10-08-2018 17:12:37 ERROR [[ACTIVE] ExecuteThread: '4' for queue: 'weblogic.kernel.Default (self-tuning)'] [com.scc.gcmintegration.inbound.TechNonTechUpdateHelper.logInterpretations(TechNonTechUpdateHelper.java:177)] - 
+<Log Information - not error> After update
+(Interp ID) (Test ID) (Order ID) (Perf Dep) (TechR) (NTechR) (TechD) (NTechD) (CreateM)

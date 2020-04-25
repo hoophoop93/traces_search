@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<div >
+		<table>
+			<tr th:each="element,iterationStatus: ${logs}" >
+			
+			<td th:if="${iterationStatus.count} == ${middle}" th:text="${element}" style="background-color:Orange; " > </td>
+			<td th:if="${iterationStatus.count} != ${middle}" th:text="${element}" > </td>
+	
+			
+
+		<!-- 		<td th:text="${element}"></td> -->
+			</tr>
+		</table>
+
+	</div>
+
+
+
+	<form action="#" th:action="@{/show/}+ ${id} ">
+		<button class="btn btn-danger text-white top-button">Next</button>
+	</form>
+	<br />
+	
+	<button type="button" onclick="window.history.go(-1); ">Back</button>
+	
+
+
+</body>
+</html>

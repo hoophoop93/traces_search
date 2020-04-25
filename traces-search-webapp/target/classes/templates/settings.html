@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style/custom.css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	crossorigin="anonymous">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+	integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+	crossorigin="anonymous"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Settings</title>
+
+</head>
+<body>
+	<!-- Image and text -->
+	<nav class="navbar navbar-dark bg-primary">
+		<p style="font-weight: bold;" class="navbar-brand">
+			<a href="/" style="color: white;"><img src="logo2.png" alt="Logo" height="65"
+				width="65"> SETTINGS
+		 </a></p>
+	</nav>
+	<br />
+	<br />
+	<div class="container-fluid">
+		<form action="#" th:action="@{/settings}" th:object="${model}"
+			class="form-conatiner" role="form" method="post">
+
+			<div class="form-group">
+				<span class="text-warning"><h3>
+						<label for="exampleInputName1">Path</label>
+					</h3></span> <input type="text" class="form-control" id="exampleInputName1"
+					placeholder="Path" th:field="*{pathoffset}" /> <span class="text-danger"
+					th:if="${#fields.hasErrors('pathoffset')}" th:errors="*{pathoffset}"></span>
+			</div>
+			<div class="form-group">
+				<span class="text-warning"><h3>
+						<label for="exampleInputName2">Lines After</label>
+					</h3></span> <input type="number" class="form-control" id="exampleInputName2" placeholder="number of lines"
+					th:field="*{linesAfter}" /> <span class="text-danger"		
+					th:if="${#fields.hasErrors('linesAfter')}"
+					th:errors="*{linesAfter}"></span>
+			</div>
+			<div class="form-group">
+				<span class="text-warning"><h3>
+						<label for="exampleInputName2">Lines Before</label>
+					</h3></span> <input type="number" class="form-control" id="exampleInputName2" placeholder="number of lines"
+					th:field="*{linesBefore}" /> <span class="text-danger"
+					th:if="${#fields.hasErrors('linesBefore')}"
+					th:errors="*{linesBefore}"></span>
+			</div>
+
+			<button class="btn btn-primary">Confirm</button>
+<br />
+		</form>
+		<br />
+		<form action="#" th:action="@{/}">
+			<button class="btn btn-primary">Back</button>
+		</form>
+
+		<br /> <br />
+
+	</div>
+
+
+</body>
+</html>

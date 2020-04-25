@@ -1,0 +1,21 @@
+body, html{
+	font-family: serif;
+background-color: coral;
+
+	
+}
+
+.footer {
+  padding: 20px 50px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+td{
+	bgcolor:#FF0000;
+
+}

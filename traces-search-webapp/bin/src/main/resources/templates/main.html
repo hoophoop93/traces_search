@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+ 	
+
+	<div th:if="${list != null}">
+
+		<h1 th:text="'Wystapienie slowa: ' + ${phrase}" ></h1>
+		
+		
+		<h3 th:if="${dateStart != null && dateEnd != null}" th:text="'Date from: ' + ${dateStart} + ' to '+ ${dateEnd}"></h3>
+
+		<div th:each="nameServerList: ${nameServerList}">
+			<table>
+				<h2 th:text="${nameServerList}"></h2>
+				<tr data-th-each="path,iterationStatus : ${list}">
+					<td th:if="${#strings.containsIgnoreCase(path, nameServerList)}"
+						th:text="${path}"></td>
+					<td th:if="${#strings.containsIgnoreCase(path, nameServerList)}"
+						style="text-align: center;">
+						<form action="#" th:action="@{/show/}+ ${iterationStatus.index}">
+							<button>Show</button>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<br />
+	<br />
+	<form action="#" th:action="@{/logsPanel}">
+		<button>Back</button>
+	</form>
+	<button onclick="myFunction()">Reload page</button>
+
+<script>
+function myFunction() {
+    location.reload();
+}
+</script>
+</body>
+</html>
